@@ -21,5 +21,5 @@ export const appConfig: ApplicationConfig = {
         "authDomain":"angularsesion.firebaseapp.com",
         "messagingSenderId":"588987184938"
       }))), 
-      importProvidersFrom(provideAuth(() => getAuth()))]
+      importProvidersFrom(provideAuth(() => getAuth())), provideAnimationsAsync()]
 };

@@ -9,12 +9,17 @@ export const routes: Routes = [
   {path:'home',
     component:HomeComponent
   },
-  {path:'login',
-    component:LoginComponent
+  {path: 'auth',
+  children:[
+    {path:'login',
+      component:LoginComponent
+    },
+    {path:'registro',
+      component:RegistroComponent
+    },
+  ],
   },
-  {path:'registro',
-    component:RegistroComponent
-  },
+
   {path:'**',
     component:HomeComponent
   }
